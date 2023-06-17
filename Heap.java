@@ -72,5 +72,12 @@ class Heap<T extends Comparable<T>>{
             }
         }
     }
+    public T peek() {
+        if (isEmpty()) {
+            throw new IllegalStateException("ESTA VACIO");
+        }
+
+        return heap.get(0);
+    }
 
 }
